@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MD Rehan Farooque - Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <!-- Full-screen animated background -->
+  <div id="particles-js"></div>
+  <!-- Floating Resume Button -->
+  <a href="{{ url_for('download_resume') }}" class="resume-btn" title="Download Resume" target="_blank">
+    <span>Download Resume</span>
+    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+    </svg>
+  </a>
+  <!-- Floating GitHub Button (left side) -->
+  <a href="https://github.com/lovieheartz" class="github-btn" title="My GitHub" target="_blank">
+  <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.289 3.438 9.773 8.207 11.387.6.113.793-.26.793-.577 0-.285-.012-1.237-.018-2.244-3.338.724-4.042-1.61-4.042-1.61-.547-1.387-1.336-1.757-1.336-1.757-1.092-.746.084-.73.084-.73 1.205.085 1.84 1.238 1.84 1.238 1.072 1.837 2.812 1.306 3.497.998.108-.776.42-1.306.763-1.607-2.665-.304-5.467-1.333-5.467-5.933 0-1.31.467-2.382 1.235-3.22-.124-.304-.535-1.528.117-3.183 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404 11.51 11.51 0 013.003.404c2.29-1.553 3.296-1.23 3.296-1.23.653 1.655.242 2.879.118 3.183.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.625-5.478 5.922.43.37.815 1.096.815 2.21 0 1.595-.015 2.882-.015 3.273 0 .32.192.694.801.576C20.565 22.067 24 17.583 24 12.297 24 5.67 18.627.297 12 .297z"/>
+  </svg>
+  <span>GitHub</span>
+  </a>
+
+
+  {% block content %}{% endblock %}
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

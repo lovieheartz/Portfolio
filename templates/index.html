@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero">
+  <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-img">
+  <h1 class="big-name shimmer">MD REHAN FAROOQUE</h1>
+  <h2 class="sub-major glow">AI/ML Engineer in the Making</h2>
+</div>
+
+<nav class="small-nav">
+  <a href="#about"><h3>About</h3></a>
+  <a href="#skills"><h3>Skills</h3></a>
+  <a href="#education"><h3>Education</h3></a>
+  <a href="#projects"><h3>Projects</h3></a>
+  <a href="#achievements"><h3>Achievements</h3></a>
+  <a href="#certifications"><h3>Certifications</h3></a> <!-- 👈 New -->
+  <a href="#blog"><h3>Blog</h3></a>
+  <a href="#contact"><h3>Contact</h3></a>
+</nav>
+
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>Hello! I'm MD REHAN FAROOQUE, a passionate and driven student currently pursuing my B.Tech in Artificial Intelligence and Machine Learning at Netaji Subhash Engineering College. With a strong foundation in programming, data structures, and machine learning concepts, I am eager to apply my knowledge to real-world challenges and continuously grow as a technologist.</p>
+
+  <p>I have a keen interest in data science, deep learning, and AI applications, and I'm constantly exploring new technologies and tools to enhance my skill set. As a fresher, I bring a curious mind, a collaborative spirit, and a commitment to learning that helps me quickly adapt to new environments.</p>
+
+  <p>I'm actively working on building projects that showcase my capabilities and reflect my enthusiasm for AI and its transformative potential. Whether it's collaborating on a team project or diving into solo experiments, I believe in learning by doing and striving for excellence in every line of code.</p>
+
+</section>
+
+<section id="skills" data-aos="fade-left">
+  <h2>Tech Stack</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, Java, C++</li>
+    <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Flask, Django</li>
+    <li><strong>ML/DL:</strong> TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy</li>
+    <li><strong>Database:</strong> SQL , MongoDB </li>
+  </ul>
+</section>
+
+<section id="education" data-aos="fade-up">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>🎓 B.Tech in Artificial Intelligence & Machine Learning</h3>
+    <p><strong>Netaji Subhash Engineering College (NSEC), West Bengal</strong></p>
+    <p>Oct 2022 – Present | CGPA: 8.1 (Till 5th Semester)</p>
+  </div>
+  <div class="card">
+    <h3>🏫 12th Standard (CBSE)</h3>
+    <p><strong>Delhi Public School, Ranchi</strong></p>
+    <p>2020 – 2021 | Score: 90.6%</p>
+  </div>
+  <div class="card">
+    <h3>🏫 10th Standard (CBSE)</h3>
+    <p><strong>DAV Public School, Barhi</strong></p>
+    <p>2018 – 2019 | Score: 92.4%</p>
+  </div>
+</section>
+
+<section id="projects" data-aos="fade-right">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>📦 Sensor Fault Detection</h3>
+    <p>ML system to estimate faulty wafer with historical sensor data.</p>
+    <p>🔗 <a href="https://github.com/lovieheartz/sensorproject01" target="_blank">View on GitHub</a></p>
+  </div>
+
+   <div class="card">
+    <h3>🐙 Bird Sound Classification using DL</h3>
+    <p>A Deep Learning model which predicts the bird species by audio data</p>
+    <p>🔗 <a href="https://github.com/lovieheartz/Bird-Sound-Classification-DL" target="_blank">View on GitHub</a></p>
+  </div>
+
+   <div class="card">
+    <h3>🧠 Email Classifier with PII Masking</h3>
+    <p>Detect and mask Personally Identifiable Information (PII),Classify emails into categories like Request, Incident, or Problem,Expose the system as a Flask API</p>
+    <p>🔗 <a href="https://github.com/lovieheartz/Email-Classifier-Project" target="_blank">View on GitHub</a></p>
+  </div>
+</section>
+
+<section id="achievements" data-aos="zoom-in-up">
+  <h2>Achievements & Activities</h2>
+  <ul>
+    <li>✅ GATE 2025 Qualified</li>
+    <li>♟️ Multi-time Chess Champion (School + College)</li>
+    <li>🤖 Core Member of Nexus AI Club, NSEC</li>
+    <li>🌍 Loves travel, volunteering & team sports</li>
+  </ul>
+
+</section>
+
+<section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+    
+    <!-- Certificate Card -->
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='images/certificates/Java-Training.jpg') }}" alt="Java Training Certificate">
+      <h3>Java Training</h3>
+      <a href="{{ url_for('static', filename='pdf/certificates.pdf') }}" download class="download-btn">Download</a>
+    </div>
+
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='images/certificates/DSA-Python.jpg') }}" alt="Python+DSA Certificate">
+      <h3>Python + DSA</h3>
+      <a href="{{ url_for('static', filename='pdf/Python+DSA.pdf') }}" download class="download-btn">Download</a>
+    </div>
+
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='images/certificates/Pytorch.jpg') }}" alt="Pytorch Certificate">
+      <h3>Pytorch</h3>
+      <a href="{{ url_for('static', filename='pdf/PyTorch.pdf') }}" download class="download-btn">Download</a>
+    </div>
+
+    <div class="cert-card">
+      <img src="{{ url_for('static', filename='images/certificates/ML+DS.jpg') }}" alt="ML+DS Certificate">
+      <h3>ML+DS Certificate</h3>
+      <a href="{{ url_for('static', filename='pdf/ML+DS.pdf') }}" download class="download-btn">Download</a>
+    </div>
+
+    <!-- Add more cards as needed -->
+  
+  </div>
+</section>
+
+<section id="blog" data-aos="fade-left">
+  <h2>Tech Blog</h2>
+  <p>I write about AI, coding tips, and learning journeys. Stay tuned for articles coming soon!</p>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Let’s Connect</h2>
+  <p>📧 <strong>Email:</strong> rehanfarooque51@gmail.com</p>
+  <p>🌐 <a href="https://www.linkedin.com/in/rehan-farooque-419a35273/" target="_blank">LinkedIn</a> | <a href="https://leetcode.com/u/lovie_heartz/" target="_blank">LeetCode</a></p>
+  <p>🐙 <a href="https://github.com/lovieheartz" target="_blank">GitHub</a> | <a href="https://huggingface.co/lovieheartz" target="_blank">HuggingFace</a></p>
+</section>
+{% endblock %}

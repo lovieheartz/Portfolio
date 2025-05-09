@@ -1,0 +1,198 @@
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* behind content */
+  background: #000; /* fallback background */
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 2rem;
+}
+
+.big-name {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.sub-major {
+  font-size: 2.0rem;
+  margin-top: 0.5rem;
+  -webkit-text-fill-color: rgb(45, 232, 249);
+  text-shadow: 0 0 8px #36effc;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #2032fd, #56d8f5, #9c3dfb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.small-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.small-nav a {
+  color: #00e6e6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.small-nav a:hover {
+  color: #ffe600;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00ffff;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+}
+
+section {
+  position: relative;
+  background: rgba(64, 220, 252, 0.92); /* semi-transparent white */
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+.resume-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2032fd;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(3, 3, 3, 0.4);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.resume-btn:hover {
+  background-color: #FF3D00;
+  transform: scale(1.05);
+}
+
+.download-icon {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.03);
+}
+
+.cert-card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 8px rgba(0,255,255,0.2);
+}
+
+.cert-card h3 {
+  color: #2032fd;
+  margin-bottom: 0.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #2032fd;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #e53900;
+}
+.github-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ background-color: #2032fd;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.github-btn:hover {
+  background-color: #FF3D00;
+  transform: scale(1.05);
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
